@@ -1,9 +1,10 @@
-# Bank
-JS, AJAX, PHP, MySQL
+# GARDEN
+JS, AJAX/AXIOS, PHP, MySQL.
 
 Mysql:
-bank/components/sql.php
+components/sql.php
 
-bank/bank.sql
+Improt:
+garden.sql
 
-![preview](https://user-images.githubusercontent.com/70883106/102594502-f75fb100-411e-11eb-895b-0aee39d60f20.jpg)
+![Screenshot 2020-12-28 133000](https://user-images.githubusercontent.com/70883106/103211418-cfd3ca00-4910-11eb-8ba0-c447508db2e2.jpg)
