@@ -1,0 +1,195 @@
+body {
+    background: rgb(83, 40, 15);
+    margin: 0;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+label {
+    line-height: 30px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #26cc3f;
+    line-height: 34px;
+}
+
+header>h1 {
+    font-size: 18px;
+    float: left;
+    line-height: 10px;
+    margin-left: 20px;
+}
+
+header>nav {
+    float: right;
+}
+
+header>nav .link {
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 10px;
+    padding: 0 2px;
+}
+
+header>nav .link.active {
+    border-bottom: solid 2px#ff4800;
+}
+
+header>nav .link:hover {
+    background: #1e9b31;
+}
+
+.container {
+    margin-top: 35px;
+    overflow: hidden;
+}
+
+.row {
+    width: 300%;
+    margin-left: 0px;
+    transition: 0.5s;
+}
+
+.container>.row>.box {
+    width: calc(100% / 3);
+    height: 95vh;
+    float: left;
+    overflow-y: auto;
+    margin-top: 8px;
+}
+
+.garden .data.close {
+    cursor: pointer;
+}
+
+.garden:hover,
+.growing:hover,
+.pick:hover {
+    background: rgb(2, 59, 4);
+}
+
+.garden {
+    display: grid;
+    margin: 0px 10px;
+    grid-template-columns: 200px 100px auto 100px;
+    max-height: 100px;
+    min-height: 30px;
+    color: #ebdcbd;
+}
+
+.garden img,
+.pick img,
+.growing img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.growing {
+    display: grid;
+    margin: 0px 10px;
+    grid-template-columns: 200px 100px auto 300px;
+    max-height: 100px;
+    min-height: 30px;
+    color: #ebdcbd;
+}
+
+.pick {
+    display: grid;
+    margin: 0px 10px;
+    grid-template-columns: 200px 100px auto 200px 200px 200px;
+    max-height: 100px;
+    min-height: 30px;
+    color: #ebdcbd;
+}
+
+.grow {
+    color: #fff;
+    width: 50%;
+    background: green;
+    text-align: center;
+    margin: 30px 25%;
+    line-height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.grow:hover {
+    background: rgb(2, 59, 4);
+}
+
+.data {
+    max-height: 100px;
+    position: relative;
+    border: solid 1px rgba(113, 113, 113, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box>form {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 300px auto;
+}
+
+.box>form>.label {
+    padding: 5px;
+    line-height: 20px;
+    border: 1px solid #2a2a2a;
+}
+
+.box>form>input {
+    width: 200px;
+    background: rgb(1, 1, 20);
+    border: 1px solid #2a2a2a;
+    border-radius: 2px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.box>form>input:focus {
+    outline: 0;
+    background: rgb(8, 8, 41);
+}
+
+.box>form>button {
+    width: 320px;
+    background: #190d5f;
+    border: 1px solid #565656;
+    border-radius: 3px;
+    padding: 8px;
+    margin: 15px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:focus {
+    outline: 0;
+}
+
+.callBack {
+    margin-left: 30px;
+    margin-top: -30px;
+    color: green;
+}
+
+.callBack>p.red {
+    color: Red;
+}

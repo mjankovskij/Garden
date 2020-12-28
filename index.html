@@ -1,0 +1,76 @@
+<!-- Nepamirskite sukurti duomenu bazes bank ir eksportuoti failu :) -->
+<!-- By marek@jankovskij.lt -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agurku sodas</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/logo.png">
+</head>
+
+<body>
+    <header>
+        <h1>Agurku sodas</h1>
+        <nav>
+            <div class='link active'>Sodas</div>
+            <div class='link'>Auginimas</div>
+            <div class='link'>Skynimas</div>
+        </nav>
+    </header>
+
+    <div class='container'>
+        <div class='row'>
+            <!-- SARASAS -->
+            <div class='box'>
+                <div class='garden'>
+                    <div class='data'>Agurkai</div>
+                    <div class='data'>Nr.</div>
+                    <div class='data'>Kiekis</div>
+                    <div class='data'>Israuti</div>
+                </div>
+                <div class='gardenPlace'></div>
+                <div class="grow">Pasodinti nauja agurka</div>
+            </div>
+            <!-- SUKURTI NAUJA garden -->
+            <div class='box'>
+                <div class='growing'>
+                    <div class='data'>Agurkai</div>
+                    <div class='data'>Nr.</div>
+                    <div class='data'>Kiekis</div>
+                    <div class='data'>Uzaugs</div>
+                </div>
+                <div class='growingPlace'></div>
+                <div class="grow">Auginti</div>
+            </div>
+            <!-- PRIDETI LESU -->
+            <div class='box'>
+                <div class='pick'>
+                    <div class='data'>Agurkai</div>
+                    <div class='data'>Nr.</div>
+                    <div class='data'>Galima skinti</div>
+                    <div class='data'>Kiek skint</div>
+                </div>
+                <div class='pickPlace'></div>
+
+                <!-- <form method='POST' id='add'>
+                    <div class='label'>Saskaitos nr:</div>
+                    <input type='text' id='bNumber' name='bNumber'>
+                    <div class='label'>Suma:</div>
+                    <input type='text' id='amount' name='amount'>
+                    <button id='add'>Prideti</button>
+                </form>
+                <div class='callBack' id='addMessage'></div> -->
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./js/main.js"></script>
+
+
+</html>
